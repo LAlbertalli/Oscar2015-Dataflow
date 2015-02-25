@@ -41,3 +41,18 @@ To run the code on Google Cloud Dataflow:
 #### Analyze only ####
 * `--windowFreq` Every how many minutes the sliding window should be applied
 * `--filterEntities` Comma separated list of entities to remove after the count
+
+### Data and Tools ###
+The directory `data/` contains the bulk dump aggregated in 5 seconds windows (`datadump.csv`) and 
+an analysis run for the top tweets(`top.csv`). The directory contains two supporting python script 
+to quickly manipulate the data.
+* `convert_file.py` Extract the selected entities and format it for 
+http://ecesena.github.io/oscars2015/#/ (source at https://github.com/ecesena/oscars2015). 
+The command format is: `./convert_file.py file entity [entity] --window N` where:
+  * `file` is the input file name
+  * `entity` is a list of entity to extract
+  * `--window N` is the number of period to aggregate to get a sliding window. Default is 1 so no
+aggregation
+* `convert_file2.py` reformat the output of analyze to make it easier to visualize in a worksheet. 
+It accepts only one argument, the file name. The input format is 
+`type,timestamp,ent1,count1,ent2,count2,...countn,entn`. The ouput format is `timestamp,count1,count2,count3...` with an header containing all the entities extracted.
