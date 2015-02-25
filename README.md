@@ -5,7 +5,7 @@ The code runs on Google Cloud Dataflow. You can read about Google Cloud Dataflow
 this address: https://cloud.google.com/dataflow/
 
 ### Disclaimer ###
-This code has been written on the beta of Google Cloud Dataflow. I'm not sure it will work correctly in the final release. 
+This code has been written on the beta of Google Cloud Dataflow (February 2015). I'm not sure it will work correctly in the final release. 
 The analysis made by this code is pretty simple and has been made mainly to experiment with this new tool and explain 
 the potentiality it has
 
