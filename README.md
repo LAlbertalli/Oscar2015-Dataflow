@@ -1,3 +1,7 @@
+# !!!Warning!!! #
+This code is 6 years old and no longer maintained. Also, this code used a technology that was in beta at the time, so it will probably no longer work.
+Please, consider it as an early POC for a new technology, nothing more.
+
 # Oscar 2015 Dataflow #
 This repository contains the code used for analyzing the data for http://ecesena.github.io/oscars2015/#/
 
